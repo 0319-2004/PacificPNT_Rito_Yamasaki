@@ -6,7 +6,12 @@ This repository contains the source code, QGIS processing scripts, and data pipe
 
 ---
 
-## 📖 Abstract (IMRAD)
+## 📖 Abstract and brief IMRAD explain
+
+In dense urban environments, Global Navigation Satellite Systems (GNSS) suffer from signal degradation due to Non-Line-of-Sight (NLoS) reception and multipath interference. While 3D city models are increasingly used to predict these risks (e.g., Signal Availability Maps), standard mapping approaches typically prioritize building geometries, often overlooking civil infrastructure. This paper tests the **"Building-First" hypothesis**—that a minimal 3D map consisting only of buildings is sufficient for navigation safety—and demonstrates its critical limitations.
+
+Using high-definition 3D data from Project PLATEAU (Tokyo), we constructed a geometry-based "Risk Horizon" metric. A rigorous field experiment across **45 stratified urban sites** revealed that the building-only model achieved a moderate AUC of **0.68**, failing catastrophically to detect "overhead hazards" such as highway viaducts. Specifically, it ranked a high-risk underpass (**56.74 m** error) as safe (Rank 44). To address this, we developed a **Hybrid Override Logic** that integrates an explicit "Overhead Hazard Score" with the building-based horizon risk. This proposed method rectified the safety blind spot (Rank 2) and achieved a superior overall AUC of **0.89 (95% CI: 0.78–0.97)**.
+
 
 ### **Introduction**
 Standard 3D city maps often prioritize buildings ("Building-First" hypothesis) while overlooking civil infrastructure like highway viaducts. This study investigates whether these standard models are sufficient for GNSS risk assessment in dense urban canyons like Shibuya, Tokyo.
