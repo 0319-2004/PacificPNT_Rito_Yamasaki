@@ -1,0 +1,4 @@
+risk_proxy_5m: 0.677
+svf_proxy_5m: 0.323
+hdop_cut_a_median: 0.726
+hdop_cut_b_median: 0.717

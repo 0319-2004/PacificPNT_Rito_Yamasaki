@@ -1,0 +1,19 @@
+# --- Mac/OS ---
+.DS_Store
+._*
+
+# --- Python ---
+__pycache__/
+*.pyc
+
+# --- QGIS ---
+*.qgs~
+*.qgz~
+
+# --- Output / Experiments (結果は無視、フォルダ構造は維持) ---
+experiments/*
+!experiments/**/.gitkeep
+!experiments/**/*.gitkeep
+
+# --- Data (データフォルダは維持) ---
+# dataフォルダはアップロードします

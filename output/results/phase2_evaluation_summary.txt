@@ -1,0 +1,6 @@
+| Model             | Score             |      AUC | Flipped   |   Rank(A11) |   Rank(A06) |
+|:------------------|:------------------|---------:|:----------|------------:|------------:|
+| Phase2 (Combined) | risk_proxy_5m     | 0.886364 | True      |          21 |           5 |
+| Phase2 (Horizon)  | risk_horizon      | 0.886364 | True      |           2 |           7 |
+| Phase2 (Overhead) | overhead_score    | 0.534091 | False     |           2 |          30 |
+| Benchmark (HDOP)  | hdop_cut_a_median | 0.840909 | True      |          44 |          19 |
